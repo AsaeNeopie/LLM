@@ -16,7 +16,6 @@ public class AirControl : MonoBehaviour
         if (other && !canRepulse)
         {
             other.GetComponent<Rigidbody>().AddForce(transform.right * force);
-            Debug.Log(other);
         }
         else if (other && canRepulse == true)
         {

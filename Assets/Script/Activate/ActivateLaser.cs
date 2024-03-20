@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Activate : MonoBehaviour
+public class ActivateLaser : MonoBehaviour
 {
     [SerializeField] List<GameObject> lasers = new List<GameObject>();
     private void OnTriggerEnter(Collider other)
