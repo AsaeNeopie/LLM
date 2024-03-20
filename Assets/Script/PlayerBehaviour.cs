@@ -7,6 +7,12 @@ using UnityEngine.InputSystem;
 public class PlayerBehaviour : MonoBehaviour
 {
     [SerializeField] float vitesseRotation;
+    [SerializeField] Camera camera;
+
+    private void Awake()
+    {
+        Time.timeScale = 1.0f;
+    }
     private void Update()
     {
         Move();
@@ -16,32 +22,32 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Rotate(Vector3.right * vitesseRotation * Time.deltaTime);
+            transform.Rotate(camera.transform.right, vitesseRotation * Time.deltaTime, Space.World);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Rotate(Vector3.left * vitesseRotation * Time.deltaTime);
+            transform.Rotate(camera.transform.right, -vitesseRotation * Time.deltaTime, Space.World) ;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.back * vitesseRotation * Time.deltaTime);
+            transform.Rotate(Vector3.back* -vitesseRotation * Time.deltaTime, Space.World);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.forward * vitesseRotation * Time.deltaTime);
+            transform.Rotate(Vector3.forward, vitesseRotation * Time.deltaTime, Space.World);
         }
 
         if (Input.GetKey(KeyCode.Q))
         {
-            transform.Rotate(Vector3.up * vitesseRotation * Time.deltaTime);
+            transform.Rotate(Vector3.up * vitesseRotation * Time.deltaTime, Space.World);
         }
 
         if(Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(Vector3.down *  vitesseRotation * Time.deltaTime);
+            transform.Rotate(Vector3.back * vitesseRotation * Time.deltaTime);
         }
     }
 }

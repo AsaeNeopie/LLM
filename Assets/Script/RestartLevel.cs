@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DestroyBall : MonoBehaviour
+public class RestartLevel : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
@@ -12,4 +12,10 @@ public class DestroyBall : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
         }
     }
+
+    public void RestartLevelF()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+    }
 }
+
