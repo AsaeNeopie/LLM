@@ -17,4 +17,5 @@ public class GetStar : MonoBehaviour
         starCount++;
         starText.text = starCount.ToString();
     }
+
 }

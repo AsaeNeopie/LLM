@@ -47,7 +47,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if(Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(Vector3.down * vitesseRotation * Time.deltaTime);
+            transform.Rotate(Vector3.up * -vitesseRotation * Time.deltaTime, Space.World);
         }
     }
 }
