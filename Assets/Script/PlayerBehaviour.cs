@@ -32,7 +32,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.back* -vitesseRotation * Time.deltaTime, Space.World);
+            transform.Rotate(Vector3.back* vitesseRotation * Time.deltaTime, Space.World);
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -47,7 +47,7 @@ public class PlayerBehaviour : MonoBehaviour
 
         if(Input.GetKey(KeyCode.E))
         {
-            transform.Rotate(Vector3.back * vitesseRotation * Time.deltaTime);
+            transform.Rotate(Vector3.down * vitesseRotation * Time.deltaTime);
         }
     }
 }
