@@ -714,6 +714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 412523214}
+  - component: {fileID: 412523215}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -738,6 +739,18 @@ Transform:
   - {fileID: 1229323311}
   m_Father: {fileID: 2123462939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &412523215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412523213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc4ca33ff8f51c408c03aea28f1314a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &417710317
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +760,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 417710318}
+  - component: {fileID: 417710319}
   m_Layer: 0
   m_Name: Laser (1)
   m_TagString: Untagged
@@ -771,6 +785,18 @@ Transform:
   - {fileID: 539986263}
   m_Father: {fileID: 2123462939}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &417710319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417710317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc4ca33ff8f51c408c03aea28f1314a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &418558778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3009973465751136743, guid: 38c734c0245ef7a4e8577e68ba0c703b, type: 3}
@@ -7058,7 +7084,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
