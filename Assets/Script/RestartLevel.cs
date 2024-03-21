@@ -7,7 +7,7 @@ public class RestartLevel : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject)
+        if (other.tag == "Ball")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
         }
