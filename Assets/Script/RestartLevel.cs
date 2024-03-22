@@ -48,5 +48,9 @@ public class RestartLevel : MonoBehaviour
         SceneManager.LoadScene("Level 6");
     }
 
+    public void LeaveGame()
+    {
+        Application.Quit();
+    }
 }
 
