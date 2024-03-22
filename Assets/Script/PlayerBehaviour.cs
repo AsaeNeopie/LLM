@@ -10,7 +10,9 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] Camera camera;
     [SerializeField] float maxXRot;
     [SerializeField] float minXRot;
+    [SerializeField] GameObject pause;
     Transform localTrans;
+    
     
 
     private void Awake()
@@ -21,6 +23,11 @@ public class PlayerBehaviour : MonoBehaviour
     private void Update()
     {
         Move();
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            pause.SetActive(true);
+            Time.timeScale = 0.0f;
+        }
     }
 
     private void Move()
