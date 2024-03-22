@@ -13,11 +13,11 @@ public class AirControl : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other && !canRepulse)
+        if (other.tag == "Ball" && !canRepulse)
         {
             other.GetComponent<Rigidbody>().AddForce(transform.right * force);
         }
-        else if (other && canRepulse == true)
+        else if (other.tag == "Ball" && canRepulse == true)
         {
             other.GetComponent<Rigidbody>().AddForce(-transform.right * force);
         }
