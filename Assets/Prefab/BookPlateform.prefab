@@ -470,8 +470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b2aee8013c96c4baf82a05dfbfbb41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vitesseRotation: 50
+  vitesseRotation: 75
   camera: {fileID: 0}
+  maxXRot: 0
+  minXRot: 0
 --- !u!1001 &8997521465959853610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -498,7 +500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed11f744313d1fe48a9120fe408f4d84, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.001281
+      value: -0.001216
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ed11f744313d1fe48a9120fe408f4d84, type: 3}
       propertyPath: m_LocalPosition.z
@@ -568,7 +570,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8078604286360032123}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
