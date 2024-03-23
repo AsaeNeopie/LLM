@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerBehaviour : MonoBehaviour
 {
@@ -60,6 +62,15 @@ public class PlayerBehaviour : MonoBehaviour
         if(Input.GetKey(KeyCode.E))
         {
             transform.Rotate(Vector3.up * -vitesseRotation * Time.deltaTime, Space.World);
+        }
+
+        if (Input.GetKey(KeyCode.R)){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("MainMenu");
         }
     }
 

@@ -932,8 +932,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 844708459}
-        m_TargetAssemblyTypeName: RestartLevel, Assembly-CSharp
+      - m_Target: {fileID: 2023470693}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: NextScene1
         m_Mode: 1
         m_Arguments:
@@ -1065,8 +1065,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 844708459}
-        m_TargetAssemblyTypeName: RestartLevel, Assembly-CSharp
+      - m_Target: {fileID: 2023470693}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: LeaveGame
         m_Mode: 1
         m_Arguments:
@@ -1126,6 +1126,7 @@ GameObject:
   - component: {fileID: 2023470692}
   - component: {fileID: 2023470691}
   - component: {fileID: 2023470690}
+  - component: {fileID: 2023470693}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1207,6 +1208,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2023470693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023470689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dda6a08a8aeb654db2148c602ca85a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2101756285
 GameObject:
   m_ObjectHideFlags: 0
