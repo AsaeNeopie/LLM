@@ -22,12 +22,12 @@ public class GameManager : MonoBehaviour
 
     public void NextScene3()
     {
-        SceneManager.LoadScene("Level3");
+        SceneManager.LoadScene("/Assets/Scenes/Level3");
     }
 
     public void NextScene4()
     {
-        SceneManager.LoadScene("Leve4");
+        SceneManager.LoadScene("/Assets/Scenes/Level4");
     }
 
     public void NextScene5()
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndScene()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Victory");
     }
 
     public void LeaveGame()
