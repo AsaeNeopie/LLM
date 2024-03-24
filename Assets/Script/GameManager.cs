@@ -30,11 +30,19 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("/Assets/Scenes/Level4");
     }
 
+    public void NextScen4A()
+    {
+        SceneManager.LoadScene("Level4A");
+    }
+
     public void NextScene5()
     {
         SceneManager.LoadScene("Level5");
     }
-
+    public void NextScen5A()
+    {
+        SceneManager.LoadScene("Level5A");
+    }
     public void NextScene6()
     {
         SceneManager.LoadScene("Level6");
