@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     public void NextScene3()
     {
-        SceneManager.LoadScene("/Assets/Scenes/Level3");
+        SceneManager.LoadScene("Level3 1");
     }
 
     public void NextScene4()
